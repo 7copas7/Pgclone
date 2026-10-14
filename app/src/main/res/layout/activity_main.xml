@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1a1a2e"
+    android:padding="16dp">
+
+    <TextView
+        android:text="PGClone"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:text="Status: parado"
+        android:textColor="#aaaaaa"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etLat"
+        android:hint="Latitude (ex: -23.5505)"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColor="#ffffff"
+        android:textColorHint="#666666"
+        android:background="#2a2a4a"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etLng"
+        android:hint="Longitude (ex: -46.6333)"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColor="#ffffff"
+        android:textColorHint="#666666"
+        android:background="#2a2a4a"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnTeleport"
+        android:text="Teleportar"
+        android:backgroundTint="#3d5a80"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnToggle"
+        android:text="Iniciar GPS"
+        android:backgroundTint="#2d6a4f"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <com.pgclone.app.JoystickView
+        android:id="@+id/joystick"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
