@@ -24,8 +24,8 @@ jobs:
 
       - name: Download Gradle 8.3
         run: |
-          wget -q https://services.gradle.org/distributions/gradle-8.3-bin.zip
-          unzip -q gradle-8.3-bin.zip
+          wget -q https://services.gradle.org/distributions/gradle-8.4-bin.zip
+unzip -q gradle-8.4-bin.zip
 
       - name: Build Debug APK
         run: ./gradle-8.3/bin/gradle assembleDebug
